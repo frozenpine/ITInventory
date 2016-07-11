@@ -1,0 +1,150 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsDeviceType" targetNamespace="http://tempuri.org/dsDeviceType.xsd" xmlns:mstns="http://tempuri.org/dsDeviceType.xsd" xmlns="http://tempuri.org/dsDeviceType.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="ConnStr2ITInventory" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="ConnStr2ITInventory (Settings)" PropertyReference="ApplicationSettings.ITInventory.Properties.Settings.GlobalReference.Default.ConnStr2ITInventory" Provider="System.Data.OleDb" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="DeviceTypeTableAdapter" GeneratorDataComponentClassName="DeviceTypeTableAdapter" Name="DeviceType" UserDataComponentName="DeviceTypeTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="ConnStr2ITInventory (Settings)" DbObjectName="ITInventory.dbo.DeviceType" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Fill" GenerateShortCommands="false" GeneratorSourceName="Fill" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT "device_type_id", "device_type_name", "device_type_description" FROM "dbo"."DeviceType" WHERE is_root_type=1</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="device_type_id" DataSetColumn="device_type_id" />
+              <Mapping SourceColumn="device_type_name" DataSetColumn="device_type_name" />
+              <Mapping SourceColumn="device_type_description" DataSetColumn="device_type_description" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="DeviceTypeAllTableAdapter" GeneratorDataComponentClassName="DeviceTypeAllTableAdapter" Name="DeviceTypeAll" UserDataComponentName="DeviceTypeAllTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="ConnStr2ITInventory (Settings)" DbObjectName="ITInventory.dbo.DeviceType" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Fill" GenerateShortCommands="false" GeneratorSourceName="Fill" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT "device_type_id", "device_type_name", "device_type_description" FROM "dbo"."DeviceType"</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="device_type_id" DataSetColumn="device_type_id" />
+              <Mapping SourceColumn="device_type_name" DataSetColumn="device_type_name" />
+              <Mapping SourceColumn="device_type_description" DataSetColumn="device_type_description" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="ComponetTypeTableAdapter" GeneratorDataComponentClassName="ComponetTypeTableAdapter" Name="ComponetType" UserDataComponentName="ComponetTypeTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="ConnStr2ITInventory (Settings)" DbObjectName="ITInventory.dbo.DeviceType" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Fill" GenerateShortCommands="false" GeneratorSourceName="Fill" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT "device_type_id", "device_type_name", "device_type_description" FROM "dbo"."DeviceType" WHERE is_root_type=0</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="device_type_id" DataSetColumn="device_type_id" />
+              <Mapping SourceColumn="device_type_name" DataSetColumn="device_type_name" />
+              <Mapping SourceColumn="device_type_description" DataSetColumn="device_type_description" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsDeviceType" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="dsDeviceType" msprop:Generator_UserDSName="dsDeviceType">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DeviceType" msprop:Generator_TableClassName="DeviceTypeDataTable" msprop:Generator_TableVarName="tableDeviceType" msprop:Generator_TablePropName="DeviceType" msprop:Generator_RowDeletingName="DeviceTypeRowDeleting" msprop:Generator_RowChangingName="DeviceTypeRowChanging" msprop:Generator_RowEvHandlerName="DeviceTypeRowChangeEventHandler" msprop:Generator_RowDeletedName="DeviceTypeRowDeleted" msprop:Generator_UserTableName="DeviceType" msprop:Generator_RowChangedName="DeviceTypeRowChanged" msprop:Generator_RowEvArgName="DeviceTypeRowChangeEvent" msprop:Generator_RowClassName="DeviceTypeRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="device_type_id" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columndevice_type_id" msprop:Generator_ColumnPropNameInRow="device_type_id" msprop:Generator_ColumnPropNameInTable="device_type_idColumn" msprop:Generator_UserColumnName="device_type_id" type="xs:int" />
+              <xs:element name="device_type_name" msprop:Generator_ColumnVarNameInTable="columndevice_type_name" msprop:Generator_ColumnPropNameInRow="device_type_name" msprop:Generator_ColumnPropNameInTable="device_type_nameColumn" msprop:Generator_UserColumnName="device_type_name" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="device_type_description" msprop:Generator_ColumnVarNameInTable="columndevice_type_description" msprop:Generator_ColumnPropNameInRow="device_type_description" msprop:Generator_ColumnPropNameInTable="device_type_descriptionColumn" msprop:Generator_UserColumnName="device_type_description" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="DeviceTypeAll" msprop:Generator_TableClassName="DeviceTypeAllDataTable" msprop:Generator_TableVarName="tableDeviceTypeAll" msprop:Generator_RowChangedName="DeviceTypeAllRowChanged" msprop:Generator_TablePropName="DeviceTypeAll" msprop:Generator_RowDeletingName="DeviceTypeAllRowDeleting" msprop:Generator_RowChangingName="DeviceTypeAllRowChanging" msprop:Generator_RowEvHandlerName="DeviceTypeAllRowChangeEventHandler" msprop:Generator_RowDeletedName="DeviceTypeAllRowDeleted" msprop:Generator_RowClassName="DeviceTypeAllRow" msprop:Generator_UserTableName="DeviceTypeAll" msprop:Generator_RowEvArgName="DeviceTypeAllRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="device_type_id" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columndevice_type_id" msprop:Generator_ColumnPropNameInRow="device_type_id" msprop:Generator_ColumnPropNameInTable="device_type_idColumn" msprop:Generator_UserColumnName="device_type_id" type="xs:int" />
+              <xs:element name="device_type_name" msprop:Generator_ColumnVarNameInTable="columndevice_type_name" msprop:Generator_ColumnPropNameInRow="device_type_name" msprop:Generator_ColumnPropNameInTable="device_type_nameColumn" msprop:Generator_UserColumnName="device_type_name" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="device_type_description" msprop:Generator_ColumnVarNameInTable="columndevice_type_description" msprop:Generator_ColumnPropNameInRow="device_type_description" msprop:Generator_ColumnPropNameInTable="device_type_descriptionColumn" msprop:Generator_UserColumnName="device_type_description" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="ComponetType" msprop:Generator_TableClassName="ComponetTypeDataTable" msprop:Generator_TableVarName="tableComponetType" msprop:Generator_TablePropName="ComponetType" msprop:Generator_RowDeletingName="ComponetTypeRowDeleting" msprop:Generator_RowChangingName="ComponetTypeRowChanging" msprop:Generator_RowEvHandlerName="ComponetTypeRowChangeEventHandler" msprop:Generator_RowDeletedName="ComponetTypeRowDeleted" msprop:Generator_UserTableName="ComponetType" msprop:Generator_RowChangedName="ComponetTypeRowChanged" msprop:Generator_RowEvArgName="ComponetTypeRowChangeEvent" msprop:Generator_RowClassName="ComponetTypeRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="device_type_id" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columndevice_type_id" msprop:Generator_ColumnPropNameInRow="device_type_id" msprop:Generator_ColumnPropNameInTable="device_type_idColumn" msprop:Generator_UserColumnName="device_type_id" type="xs:int" />
+              <xs:element name="device_type_name" msprop:Generator_ColumnVarNameInTable="columndevice_type_name" msprop:Generator_ColumnPropNameInRow="device_type_name" msprop:Generator_ColumnPropNameInTable="device_type_nameColumn" msprop:Generator_UserColumnName="device_type_name" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="device_type_description" msprop:Generator_ColumnVarNameInTable="columndevice_type_description" msprop:Generator_ColumnPropNameInRow="device_type_description" msprop:Generator_ColumnPropNameInTable="device_type_descriptionColumn" msprop:Generator_UserColumnName="device_type_description" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:DeviceType" />
+      <xs:field xpath="mstns:device_type_id" />
+    </xs:unique>
+    <xs:unique name="DeviceTypeAll_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:DeviceTypeAll" />
+      <xs:field xpath="mstns:device_type_id" />
+    </xs:unique>
+    <xs:unique name="ComponetType_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:ComponetType" />
+      <xs:field xpath="mstns:device_type_id" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

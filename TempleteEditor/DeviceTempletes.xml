@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Templetes>
+	<Templete Name="24 Port Switch" ID="2">
+		<Item Name="PWR {n}" ID="26" Quantity="1" StartPos="0" />
+		<Socket Name="g0/0/{n}" ID="1" Quantity="24" StartPos="1" />
+		<Socket Name="Console {n}" ID="20" Quantity="1" StartPos="0" />
+	</Templete>
+	<Templete Name="48 Port Switch" ID="2">
+		<Item Name="PWR {n}" ID="26" Quantity="1" StartPos="0" />
+		<Socket Name="g0/0/{n}" ID="1" Quantity="48" StartPos="1" />
+		<Socket Name="Console {n}" ID="20" Quantity="1" StartPos="0" />
+	</Templete>
+	<Templete Name="Server" ID="13">
+		<Item Name="CPU {n}" ID="23" Quantity="2" StartPos="0" />
+		<Item Name="Memo {n}" ID="22" Quantity="4" StartPos="0" />
+		<Item Name="RAID Adapter {n}" ID="19" Quantity="1" StartPos="0">
+			<Item Name="HDD {n}" ID="15" Quantity="2" StartPos="0" />
+    </Item>
+		<Item Name="Network Adapter {n}" ID="18" Quantity="1" StartPos="0">
+			<Socket Name="Eth {n}" ID="1" Quantity="4" StartPos="0" />
+		</Item>
+		<Item Name="PWR {n}" ID="26" Quantity="2" StartPos="0" />
+	</Templete>
+	<Templete Name="Firewall" ID="4">
+		<Item Name="PWR {n}" ID="26" Quantity="1" StartPos="0" />
+		<Socket Name="ge-0/0/{n}" ID="1" Quantity="8" StartPos="0" />
+		<Socket Name="Console {n}" ID="20" Quantity="1" StartPos="0" />
+	</Templete>
+</Templetes>
+
+
+

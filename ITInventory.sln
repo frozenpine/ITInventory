@@ -1,0 +1,56 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ITInventory", "ITInventory\ITInventory.csproj", "{55C1F8F1-7003-4B14-A794-739F83CB1451}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{34CD573E-C1B9-4747-8F5E-A38D226D560B}"
+	ProjectSection(SolutionItems) = preProject
+		TempleteEditor\DeviceTempletes.xml = TempleteEditor\DeviceTempletes.xml
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommonClass", "CommonClass\CommonClass.csproj", "{0D383303-1303-4CC6-A4FB-2BFD8F3B066A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Topology", "Topology\Topology.csproj", "{A4EFFCE9-45DE-48BB-8470-6144D8F2B745}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DBConfiguration", "DBConfiguration\DBConfiguration.csproj", "{C4EDB560-B011-418E-B950-A7A2ADEDCD52}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "ITInventorySetup", "ITInventorySetup\ITInventorySetup.vdproj", "{FB614C80-B3B3-4604-A5F8-54FE542A726A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{55C1F8F1-7003-4B14-A794-739F83CB1451}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{55C1F8F1-7003-4B14-A794-739F83CB1451}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{55C1F8F1-7003-4B14-A794-739F83CB1451}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{55C1F8F1-7003-4B14-A794-739F83CB1451}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{55C1F8F1-7003-4B14-A794-739F83CB1451}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0D383303-1303-4CC6-A4FB-2BFD8F3B066A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0D383303-1303-4CC6-A4FB-2BFD8F3B066A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0D383303-1303-4CC6-A4FB-2BFD8F3B066A}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{0D383303-1303-4CC6-A4FB-2BFD8F3B066A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0D383303-1303-4CC6-A4FB-2BFD8F3B066A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A4EFFCE9-45DE-48BB-8470-6144D8F2B745}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A4EFFCE9-45DE-48BB-8470-6144D8F2B745}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A4EFFCE9-45DE-48BB-8470-6144D8F2B745}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A4EFFCE9-45DE-48BB-8470-6144D8F2B745}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C4EDB560-B011-418E-B950-A7A2ADEDCD52}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C4EDB560-B011-418E-B950-A7A2ADEDCD52}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C4EDB560-B011-418E-B950-A7A2ADEDCD52}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C4EDB560-B011-418E-B950-A7A2ADEDCD52}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FB614C80-B3B3-4604-A5F8-54FE542A726A}.Debug|Any CPU.ActiveCfg = Debug
+		{FB614C80-B3B3-4604-A5F8-54FE542A726A}.Debug|Any CPU.Build.0 = Debug
+		{FB614C80-B3B3-4604-A5F8-54FE542A726A}.Release|Any CPU.ActiveCfg = Release
+		{FB614C80-B3B3-4604-A5F8-54FE542A726A}.Release|Any CPU.Build.0 = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{0D383303-1303-4CC6-A4FB-2BFD8F3B066A} = {34CD573E-C1B9-4747-8F5E-A38D226D560B}
+	EndGlobalSection
+EndGlobal

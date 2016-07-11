@@ -1,0 +1,22 @@
+﻿<Window x:Name="TopologyDraw" x:Class="Topology.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Topology"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="354" Width="599" WindowStartupLocation="CenterOwner" WindowStyle="None" ShowInTaskbar="True">
+    <Grid Name="grdContainer" ShowGridLines="True">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"></RowDefinition>
+            <RowDefinition>
+            </RowDefinition>
+        </Grid.RowDefinitions>
+        <ToolBar x:Name="toolBar" HorizontalAlignment="Left" VerticalAlignment="Top" Grid.Row="0">
+            <Button HorizontalAlignment="Left" Margin="0" MinWidth="24" MinHeight="24" Name="btn1">1</Button>
+            <Button HorizontalAlignment="Left" Margin="0" MinWidth="24" MinHeight="24" Name="btn2">2</Button>
+            <Button HorizontalAlignment="Left" Margin="0" MinWidth="24" MinHeight="24" Name="btn3">3</Button>
+            <Button HorizontalAlignment="Left" Margin="0" MinWidth="24" MinHeight="24" Name="btn4">4</Button>
+        </ToolBar>
+    </Grid>
+</Window>

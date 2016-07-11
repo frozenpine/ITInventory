@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsSpeedType" targetNamespace="http://tempuri.org/dsSpeedType.xsd" xmlns:mstns="http://tempuri.org/dsSpeedType.xsd" xmlns="http://tempuri.org/dsSpeedType.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="ConnStr2ITInventory" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="ConnStr2ITInventory (Settings)" PropertyReference="ApplicationSettings.TempleteEditor.Properties.Settings.GlobalReference.Default.ConnStr2ITInventory" Provider="System.Data.OleDb" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="SocketSpeedTypeTableAdapter" GeneratorDataComponentClassName="SocketSpeedTypeTableAdapter" Name="SocketSpeedType" UserDataComponentName="SocketSpeedTypeTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="ConnStr2ITInventory (Settings)" DbObjectName="ITInventory.dbo.SocketSpeedType" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Fill" GenerateShortCommands="false" GeneratorSourceName="Fill" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT "socket_speed_type_id", "socket_speed_type_name" FROM "dbo"."SocketSpeedType"</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="socket_speed_type_id" DataSetColumn="socket_speed_type_id" />
+              <Mapping SourceColumn="socket_speed_type_name" DataSetColumn="socket_speed_type_name" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsSpeedType" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="dsSpeedType" msprop:Generator_UserDSName="dsSpeedType">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="SocketSpeedType" msprop:Generator_TableClassName="SocketSpeedTypeDataTable" msprop:Generator_TableVarName="tableSocketSpeedType" msprop:Generator_TablePropName="SocketSpeedType" msprop:Generator_RowDeletingName="SocketSpeedTypeRowDeleting" msprop:Generator_RowChangingName="SocketSpeedTypeRowChanging" msprop:Generator_RowEvHandlerName="SocketSpeedTypeRowChangeEventHandler" msprop:Generator_RowDeletedName="SocketSpeedTypeRowDeleted" msprop:Generator_UserTableName="SocketSpeedType" msprop:Generator_RowChangedName="SocketSpeedTypeRowChanged" msprop:Generator_RowEvArgName="SocketSpeedTypeRowChangeEvent" msprop:Generator_RowClassName="SocketSpeedTypeRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="socket_speed_type_id" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnsocket_speed_type_id" msprop:Generator_ColumnPropNameInRow="socket_speed_type_id" msprop:Generator_ColumnPropNameInTable="socket_speed_type_idColumn" msprop:Generator_UserColumnName="socket_speed_type_id" type="xs:int" />
+              <xs:element name="socket_speed_type_name" msprop:Generator_ColumnVarNameInTable="columnsocket_speed_type_name" msprop:Generator_ColumnPropNameInRow="socket_speed_type_name" msprop:Generator_ColumnPropNameInTable="socket_speed_type_nameColumn" msprop:Generator_UserColumnName="socket_speed_type_name" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:SocketSpeedType" />
+      <xs:field xpath="mstns:socket_speed_type_id" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

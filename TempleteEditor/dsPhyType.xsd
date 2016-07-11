@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsPhyType" targetNamespace="http://tempuri.org/dsPhyType.xsd" xmlns:mstns="http://tempuri.org/dsPhyType.xsd" xmlns="http://tempuri.org/dsPhyType.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="ConnStr2ITInventory" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="ConnStr2ITInventory (Settings)" PropertyReference="ApplicationSettings.TempleteEditor.Properties.Settings.GlobalReference.Default.ConnStr2ITInventory" Provider="System.Data.OleDb" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="SocketPhyTypeTableAdapter" GeneratorDataComponentClassName="SocketPhyTypeTableAdapter" Name="SocketPhyType" UserDataComponentName="SocketPhyTypeTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="ConnStr2ITInventory (Settings)" DbObjectName="ITInventory.dbo.SocketPhyType" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Fill" GenerateShortCommands="false" GeneratorSourceName="Fill" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT "socket_phy_type_id", "socket_phy_type_name", "socket_phy_type_description" FROM "dbo"."SocketPhyType"</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="socket_phy_type_id" DataSetColumn="socket_phy_type_id" />
+              <Mapping SourceColumn="socket_phy_type_name" DataSetColumn="socket_phy_type_name" />
+              <Mapping SourceColumn="socket_phy_type_description" DataSetColumn="socket_phy_type_description" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsPhyType" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="dsPhyType" msprop:Generator_UserDSName="dsPhyType">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="SocketPhyType" msprop:Generator_TableClassName="SocketPhyTypeDataTable" msprop:Generator_TableVarName="tableSocketPhyType" msprop:Generator_RowChangedName="SocketPhyTypeRowChanged" msprop:Generator_TablePropName="SocketPhyType" msprop:Generator_RowDeletingName="SocketPhyTypeRowDeleting" msprop:Generator_RowChangingName="SocketPhyTypeRowChanging" msprop:Generator_RowEvHandlerName="SocketPhyTypeRowChangeEventHandler" msprop:Generator_RowDeletedName="SocketPhyTypeRowDeleted" msprop:Generator_RowClassName="SocketPhyTypeRow" msprop:Generator_UserTableName="SocketPhyType" msprop:Generator_RowEvArgName="SocketPhyTypeRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="socket_phy_type_id" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnsocket_phy_type_id" msprop:Generator_ColumnPropNameInRow="socket_phy_type_id" msprop:Generator_ColumnPropNameInTable="socket_phy_type_idColumn" msprop:Generator_UserColumnName="socket_phy_type_id" type="xs:int" />
+              <xs:element name="socket_phy_type_name" msprop:Generator_ColumnVarNameInTable="columnsocket_phy_type_name" msprop:Generator_ColumnPropNameInRow="socket_phy_type_name" msprop:Generator_ColumnPropNameInTable="socket_phy_type_nameColumn" msprop:Generator_UserColumnName="socket_phy_type_name" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="socket_phy_type_description" msprop:Generator_ColumnVarNameInTable="columnsocket_phy_type_description" msprop:Generator_ColumnPropNameInRow="socket_phy_type_description" msprop:Generator_ColumnPropNameInTable="socket_phy_type_descriptionColumn" msprop:Generator_UserColumnName="socket_phy_type_description" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:SocketPhyType" />
+      <xs:field xpath="mstns:socket_phy_type_id" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

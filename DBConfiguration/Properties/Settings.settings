@@ -1,0 +1,12 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="DBConfiguration.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="ITInventory_Config" Type="System.String" Scope="User">
+      <Value Profile="(Default)">D:\Users\Sonny\Documents\Visual Studio 2015\Projects\ITInventory\ITInventory\bin\Debug\ITInventory.exe.config</Value>
+    </Setting>
+    <Setting Name="TempleteEditor_Config" Type="System.String" Scope="User">
+      <Value Profile="(Default)">D:\Users\Sonny\Documents\Visual Studio 2015\Projects\ITInventory\TempleteEditor\bin\Debug\TempleteEditor.exe.config</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsManufactory" targetNamespace="http://tempuri.org/dsManufactory.xsd" xmlns:mstns="http://tempuri.org/dsManufactory.xsd" xmlns="http://tempuri.org/dsManufactory.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="ConnStr2ITInventory" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="ConnStr2ITInventory (Settings)" PropertyReference="ApplicationSettings.TempleteEditor.Properties.Settings.GlobalReference.Default.ConnStr2ITInventory" Provider="System.Data.OleDb" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="ManufactoryTableAdapter" GeneratorDataComponentClassName="ManufactoryTableAdapter" Name="Manufactory" UserDataComponentName="ManufactoryTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="ConnStr2ITInventory (Settings)" DbObjectName="ITInventory.dbo.Manufactory" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Fill" GenerateShortCommands="false" GeneratorSourceName="Fill" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT "manufactory_id", "manufactory_name", "manufactory_description", "manufactory_web", "manufactory_alias" FROM "dbo"."Manufactory"</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="manufactory_id" DataSetColumn="manufactory_id" />
+              <Mapping SourceColumn="manufactory_name" DataSetColumn="manufactory_name" />
+              <Mapping SourceColumn="manufactory_description" DataSetColumn="manufactory_description" />
+              <Mapping SourceColumn="manufactory_web" DataSetColumn="manufactory_web" />
+              <Mapping SourceColumn="manufactory_alias" DataSetColumn="manufactory_alias" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsManufactory" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="dsManufactory" msprop:Generator_UserDSName="dsManufactory">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Manufactory" msprop:Generator_TableClassName="ManufactoryDataTable" msprop:Generator_TableVarName="tableManufactory" msprop:Generator_TablePropName="Manufactory" msprop:Generator_RowDeletingName="ManufactoryRowDeleting" msprop:Generator_RowChangingName="ManufactoryRowChanging" msprop:Generator_RowEvHandlerName="ManufactoryRowChangeEventHandler" msprop:Generator_RowDeletedName="ManufactoryRowDeleted" msprop:Generator_UserTableName="Manufactory" msprop:Generator_RowChangedName="ManufactoryRowChanged" msprop:Generator_RowEvArgName="ManufactoryRowChangeEvent" msprop:Generator_RowClassName="ManufactoryRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="manufactory_id" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnmanufactory_id" msprop:Generator_ColumnPropNameInRow="manufactory_id" msprop:Generator_ColumnPropNameInTable="manufactory_idColumn" msprop:Generator_UserColumnName="manufactory_id" type="xs:int" />
+              <xs:element name="manufactory_name" msprop:Generator_ColumnVarNameInTable="columnmanufactory_name" msprop:Generator_ColumnPropNameInRow="manufactory_name" msprop:Generator_ColumnPropNameInTable="manufactory_nameColumn" msprop:Generator_UserColumnName="manufactory_name" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="manufactory_description" msprop:Generator_ColumnVarNameInTable="columnmanufactory_description" msprop:Generator_ColumnPropNameInRow="manufactory_description" msprop:Generator_ColumnPropNameInTable="manufactory_descriptionColumn" msprop:Generator_UserColumnName="manufactory_description" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="manufactory_web" msprop:Generator_ColumnVarNameInTable="columnmanufactory_web" msprop:Generator_ColumnPropNameInRow="manufactory_web" msprop:Generator_ColumnPropNameInTable="manufactory_webColumn" msprop:Generator_UserColumnName="manufactory_web" type="xs:string" minOccurs="0" />
+              <xs:element name="manufactory_alias" msprop:Generator_ColumnVarNameInTable="columnmanufactory_alias" msprop:Generator_ColumnPropNameInRow="manufactory_alias" msprop:Generator_ColumnPropNameInTable="manufactory_aliasColumn" msprop:Generator_UserColumnName="manufactory_alias" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Manufactory" />
+      <xs:field xpath="mstns:manufactory_id" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>
